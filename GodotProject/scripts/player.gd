@@ -21,7 +21,7 @@ func _physics_process(delta):
 	
 	if is_on_floor():
 		velocity.y = 0
-	var direction = Vector2(Input.get_action_strength("right")-Input.get_action_strength("left"), -1.0 if Input.is_action_just_pressed("space") and is_on_floor() else 1.0)
+	var direction = Vector2(Input.get_action_strength("right")-Input.get_action_strength("left"), -1.0 if (Input.is_action_just_pressed("z") or Input.is_action_just_pressed("space")) and is_on_floor() else 1.0)
 	velocity.x = speed.x * direction.x
 	velocity.y += gravity * delta
 	if direction.y == -1.0:
