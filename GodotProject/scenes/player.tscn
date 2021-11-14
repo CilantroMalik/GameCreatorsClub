@@ -1,15 +1,14 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/player.png" type="Texture" id=1]
+[ext_resource path="res://assets/placeholder/player.png" type="Texture" id=1]
 [ext_resource path="res://scripts/player.gd" type="Script" id=2]
 
 [node name="player" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
-[node name="player" type="Sprite" parent="."]
-scale = Vector2( 0.9, 0.9 )
-texture = ExtResource( 1 )
-
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 0, -0.0632706 )
 polygon = PoolVector2Array( -0.251896, -15.1565, 3.47443, -9.12577, 10.78, -10.8418, 9.26003, -3.92853, 14.9476, 0.042942, 9.211, 3.8183, 11.0251, 10.8787, 3.76861, 9.45681, 0.140347, 15.2914, -3.68404, 9.30972, -10.9896, 11.2219, -9.27352, 3.96539, -15.1082, 0.190035, -9.22449, -3.68338, -11.0386, -10.8909, -3.92919, -9.02771 )
+
+[node name="player" type="Sprite" parent="."]
+texture = ExtResource( 1 )
