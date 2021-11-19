@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var velocity = Vector2(0, 0)
-export var speed = Vector2(200, 220.0)
+export var speed = Vector2(200.0, 220.0)
 export var gravity = 475.0
 export var dashSpeed = 500.0
 export var vertDashSpeed = 1000.0
